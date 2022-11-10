@@ -1,0 +1,44 @@
+{% extends "admin_layout.html" %}
+{% block content %}
+
+<style>
+table, th, td {
+  border: 8px solid black;
+}
+</style>
+
+    <div class="container">
+        <h1>Already printed letters details <h1>
+            <table class="table">
+                <tr>
+    
+    
+    
+                    <th>Matric number</th>
+    
+                    <th>Name</th>
+                    <th>Date Printed</th>
+    
+                </tr>
+    
+                <!-- here is a for-loop to give us all the socks -->
+                {% for result in results %}
+                <tr>
+    
+    
+                    <td style="height:100px;width:200px">{{ result[1]}}</td>
+    
+                    <td style="height:100px;width:200px">{{ result[2]}}</td>
+                    <td style="height:100px;width:200px">{{ result[3]}}</td>
+    
+                </tr>
+    
+                {% endfor %}
+                        </table>
+
+           
+
+
+
+
+{% endblock content %}

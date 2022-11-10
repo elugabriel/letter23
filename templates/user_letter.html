@@ -1,0 +1,29 @@
+{% extends "user_layout.html" %}
+{% block content %}
+
+    <div class="container">
+         <h1>Enter Matric Number<h1>
+    </div>
+    <br/> <br/>
+
+     <form action="" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Matric Number</label>
+                <input type="text" class="form-control"  placeholder="Matric Number" name = "number">
+                <br>
+                <label for="exampleInputEmail1">Session</label>
+                <input type="text" class="form-control"  placeholder="Session" name = "session">
+                <br>
+                <label for="exampleInputEmail1">Start Date</label>
+                <input type="text" class="form-control"  placeholder="Start Date" name = "start_date">
+
+              </div>
+
+            
+              <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
+
+{% endblock content %}
